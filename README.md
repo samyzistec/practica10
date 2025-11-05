@@ -5,6 +5,7 @@
 Microservicio desarrollado en **Java** con **Spring Boot**, encargado de [describir brevemente la funcionalidad principal, por ejemplo: gestionar el catálogo de productos, procesar órdenes o manejar usuarios].  
 Este servicio forma parte de una arquitectura basada en microservicios y expone endpoints RESTful para la interacción con otros módulos.
 
+
 ## Características
 
 - **Framework:** Spring Boot 3.x  
