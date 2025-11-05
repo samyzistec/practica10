@@ -3,6 +3,7 @@
 ## Descripción
 
 Microservicio desarrollado en Java que proporciona [breve descripción de la funcionalidad principal].
+Jennifer: Este es un proyecto de práctica donde aprendemos a usar Git y GitHub.
 
 ## Características
 
