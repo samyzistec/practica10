@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escuela • CRUD SPA</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body { background: #f8f9fa; }
+    .table-actions { white-space: nowrap; }
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="#">Escuela CRUD</a>
+    <div class="d-flex gap-2">
+      <button id="btn-export-csv" class="btn btn-outline-light btn-sm">
+        <i class="bi bi-filetype-csv me-1"></i>CSV
+      </button>
+      <button id="btn-export-pdf" class="btn btn-outline-light btn-sm">
+        <i class="bi bi-filetype-pdf me-1"></i>PDF
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-4">
+  <!-- Tabs -->
+  <ul class="nav nav-tabs" id="entityTabs" role="tablist">
+    <li class="nav-item"><button class="nav-link active" id="estudiantes-tab" data-bs-toggle="tab" data-bs-target="#estudiantes" type="button">Estudiantes</button></li>
+    <li class="nav-item"><button class="nav-link" id="instructores-tab" data-bs-toggle="tab" data-bs-target="#instructores" type="button">Instructores</button></li>
+    <li class="nav-item"><button class="nav-link" id="cursos-tab" data-bs-toggle="tab" data-bs-target="#cursos" type="button">Cursos</button></li>
+    <li class="nav-item"><button class="nav-link" id="inscripciones-tab" data-bs-toggle="tab" data-bs-target="#inscripciones" type="button">Inscripciones</button></li>
+    <li class="nav-item"><button class="nav-link" id="calificaciones-tab" data-bs-toggle="tab" data-bs-target="#calificaciones" type="button">Calificaciones</button></li>
+  </ul>
+
+  <div class="tab-content p-3 bg-white border border-top-0 rounded-bottom shadow-sm" id="entityTabsContent">
+    <!-- Estudiantes -->
+    <section class="tab-pane fade show active" id="estudiantes" role="tabpanel">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="input-group w-auto">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input id="search-estudiantes" class="form-control" type="search" placeholder="Buscar...">
+        </div>
+        <button class="btn btn-primary" data-entity="estudiantes" data-action="open-create">
+          <i class="bi bi-plus-circle me-1"></i>Nuevo
+        </button>
+      </div>
+      <div id="table-estudiantes-wrapper" class="table-responsive"></div>
+      <nav><ul id="pagination-estudiantes" class="pagination pagination-sm justify-content-end mt-3"></ul></nav>
+    </section>
+
+    <!-- Instructores -->
+    <section class="tab-pane fade" id="instructores" role="tabpanel">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="input-group w-auto">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input id="search-instructores" class="form-control" type="search" placeholder="Buscar...">
+        </div>
+        <button class="btn btn-primary" data-entity="instructores" data-action="open-create">
+          <i class="bi bi-plus-circle me-1"></i>Nuevo
+        </button>
+      </div>
+      <div id="table-instructores-wrapper" class="table-responsive"></div>
+      <nav><ul id="pagination-instructores" class="pagination pagination-sm justify-content-end mt-3"></ul></nav>
+    </section>
+
+    <!-- Cursos -->
+    <section class="tab-pane fade" id="cursos" role="tabpanel">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="input-group w-auto">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input id="search-cursos" class="form-control" type="search" placeholder="Buscar...">
+        </div>
+        <button class="btn btn-primary" data-entity="cursos" data-action="open-create">
+          <i class="bi bi-plus-circle me-1"></i>Nuevo
+        </button>
+      </div>
+      <div id="table-cursos-wrapper" class="table-responsive"></div>
+      <nav><ul id="pagination-cursos" class="pagination pagination-sm justify-content-end mt-3"></ul></nav>
+    </section>
+
+    <!-- Inscripciones -->
+    <section class="tab-pane fade" id="inscripciones" role="tabpanel">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="input-group w-auto">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input id="search-inscripciones" class="form-control" type="search" placeholder="Buscar...">
+        </div>
+        <button class="btn btn-primary" data-entity="inscripciones" data-action="open-create">
+          <i class="bi bi-plus-circle me-1"></i>Nuevo
+        </button>
+      </div>
+      <div id="table-inscripciones-wrapper" class="table-responsive"></div>
+      <nav><ul id="pagination-inscripciones" class="pagination pagination-sm justify-content-end mt-3"></ul></nav>
+    </section>
+
+    <!-- Calificaciones (SIN métricas ni gráficos en la UI) -->
+    <section class="tab-pane fade" id="calificaciones" role="tabpanel">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="input-group w-auto">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input id="search-calificaciones" class="form-control" type="search" placeholder="Buscar...">
+        </div>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-secondary" id="btnRefrescarCal">
+            <i class="bi bi-arrow-clockwise me-1"></i>Refrescar
+          </button>
+          <button class="btn btn-primary" data-entity="calificaciones" data-action="open-create">
+            <i class="bi bi-plus-circle me-1"></i>Nuevo
+          </button>
+        </div>
+      </div>
+
+      <!-- Solo tabla CRUD; NO se muestran gráficos ni promedios -->
+      <div id="table-calificaciones-wrapper" class="table-responsive"></div>
+      <nav><ul id="pagination-calificaciones" class="pagination pagination-sm justify-content-end mt-3"></ul></nav>
+    </section>
+  </div>
+</main>
+
+<!-- Modal CRUD -->
+<div class="modal fade" id="crudModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="crudModalLabel">Crear</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <form id="crudForm" novalidate class="needs-validation"></form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button id="btn-save" type="submit" form="crudForm" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1200">
+  <div id="toast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div id="toast-body" class="toast-body">Mensaje</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- jsPDF + AutoTable (para exportar PDF) -->
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
+
+<!-- Módulos de la app -->
+<script type="module" src="./assets/js/config.js"></script>
+<script type="module" src="./assets/js/utils.js"></script>
+<script type="module" src="./assets/js/app.js"></script>
+<!-- Generación del PDF (promedio general y por curso, sin mostrar nada en pantalla) -->
+<script type="module" src="./assets/js/report.js"></script>
+
+</body>
+</html>

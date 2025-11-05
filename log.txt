@@ -1,0 +1,379 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< com.mx:escuela >---------------------------
+[INFO] Building escuela 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ escuela ---
+[INFO] Deleting C:\Users\Samuel Perez\Desktop\BasesDeDatos\escuela\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ escuela ---
+[INFO] Copying 6 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ escuela ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 33 source files with javac [debug release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/config/GlobalExceptionHandler.java:[14,8] class ConfigExceptionHandler is public, should be declared in a file named ConfigExceptionHandler.java
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/controller/InstructorController.java:[22,74] cannot find symbol
+  symbol:   method getId()
+  location: variable saved of type com.mx.escuela.model.Instructor
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InstructorService.java:[16,43] cannot find symbol
+  symbol:   method setId(<nulltype>)
+  location: variable i of type com.mx.escuela.model.Instructor
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InstructorService.java:[17,91] cannot find symbol
+  symbol:   method getNombre()
+  location: variable i of type com.mx.escuela.model.Instructor
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InstructorService.java:[17,119] cannot find symbol
+  symbol:   method getEmail()
+  location: variable i of type com.mx.escuela.model.Instructor
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[28,6] cannot find symbol
+  symbol:   method setInscripcion(com.mx.escuela.model.Inscripcion)
+  location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[29,6] cannot find symbol
+  symbol:   method setNota(@jakarta.validation.constraints.NotNull,@jakarta.validation.constraints.DecimalMin("0.0"),@jakarta.validation.constraints.DecimalMax("100.0") java.math.BigDecimal)
+  location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[32,41] cannot find symbol
+  symbol:   method getId()
+  location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[41,8] cannot find symbol
+  symbol:   method setInscripcion(com.mx.escuela.model.Inscripcion)
+  location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[45,8] cannot find symbol
+  symbol:   method setNota(@jakarta.validation.constraints.NotNull,@jakarta.validation.constraints.DecimalMin("0.0"),@jakarta.validation.constraints.DecimalMax("100.0") java.math.BigDecimal)
+  location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[85,14] cannot find symbol
+  symbol:   method getInscripcion()
+  location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[89,33] cannot find symbol
+  symbol:   method getId()
+  location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[89,50] cannot find symbol
+  symbol:   method getNota()
+  location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/EstudianteService.java:[16,43] cannot find symbol
+  symbol:   method setId(<nulltype>)
+  location: variable e of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/EstudianteService.java:[17,91] cannot find symbol
+  symbol:   method getNombre()
+  location: variable e of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/EstudianteService.java:[17,119] cannot find symbol
+  symbol:   method getEmail()
+  location: variable e of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/EstudianteService.java:[17,153] cannot find symbol
+  symbol:   method getFechaIngreso()
+  location: variable e of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/controller/EstudianteController.java:[22,73] cannot find symbol
+  symbol:   method getId()
+  location: variable saved of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[20,6] cannot find symbol
+  symbol:   method setId(<nulltype>)
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[21,9] cannot find symbol
+  symbol:   method getInstructor()
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[21,36] cannot find symbol
+  symbol:   method getInstructor()
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[22,47] cannot find symbol
+  symbol:   method getInstructor()
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[23,91] cannot find symbol
+  symbol:   method getInstructor()
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[24,8] cannot find symbol
+  symbol:   method setInstructor(com.mx.escuela.model.Instructor)
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[30,18] cannot find symbol
+  symbol:   method getClave()
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[31,19] cannot find symbol
+  symbol:   method getNombre()
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[32,21] cannot find symbol
+  symbol:   method getCreditos()
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[33,9] cannot find symbol
+  symbol:   method getInstructor()
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[33,36] cannot find symbol
+  symbol:   method getInstructor()
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[34,40] cannot find symbol
+  symbol:   method getInstructor()
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[35,91] cannot find symbol
+  symbol:   method getInstructor()
+  location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[38,9] cannot find symbol
+  symbol:   method setInstructor(<nulltype>)
+  location: variable db of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/exception/GlobalExceptionHandler.java:[18,29] cannot find symbol
+  symbol:   method builder()
+  location: class com.mx.escuela.exception.ApiError
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[49,14] cannot find symbol
+  symbol:   method setEstudiante(com.mx.escuela.model.Estudiante)
+  location: variable nueva of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[50,14] cannot find symbol
+  symbol:   method setCurso(com.mx.escuela.model.Curso)
+  location: variable nueva of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[51,14] cannot find symbol
+  symbol:   method setPeriodo(@jakarta.validation.constraints.NotBlank java.lang.String)
+  location: variable nueva of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[56,32] cannot find symbol
+  symbol:   method getId()
+  location: variable est of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[56,45] cannot find symbol
+  symbol:   method getNombre()
+  location: variable est of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[57,32] cannot find symbol
+  symbol:   method getId()
+  location: variable cur of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[57,45] cannot find symbol
+  symbol:   method getNombre()
+  location: variable cur of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[55,25] cannot find symbol
+  symbol:   method getId()
+  location: variable guardada of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[58,25] cannot find symbol
+  symbol:   method getPeriodo()
+  location: variable guardada of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[70,16] cannot find symbol
+  symbol:   method setEstudiante(com.mx.escuela.model.Estudiante)
+  location: variable ins of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[75,16] cannot find symbol
+  symbol:   method setCurso(com.mx.escuela.model.Curso)
+  location: variable ins of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[78,16] cannot find symbol
+  symbol:   method setPeriodo(@jakarta.validation.constraints.NotBlank java.lang.String)
+  location: variable ins of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[84,32] cannot find symbol
+  symbol:   method getEstudiante()
+  location: variable upd of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[84,61] cannot find symbol
+  symbol:   method getEstudiante()
+  location: variable upd of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[85,32] cannot find symbol
+  symbol:   method getCurso()
+  location: variable upd of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[85,56] cannot find symbol
+  symbol:   method getCurso()
+  location: variable upd of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[83,20] cannot find symbol
+  symbol:   method getId()
+  location: variable upd of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[86,20] cannot find symbol
+  symbol:   method getPeriodo()
+  location: variable upd of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[100,30] cannot find symbol
+  symbol:   method getEstudiante()
+  location: variable i of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[100,57] cannot find symbol
+  symbol:   method getEstudiante()
+  location: variable i of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[101,30] cannot find symbol
+  symbol:   method getCurso()
+  location: variable i of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[101,52] cannot find symbol
+  symbol:   method getCurso()
+  location: variable i of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[99,18] cannot find symbol
+  symbol:   method getId()
+  location: variable i of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[102,18] cannot find symbol
+  symbol:   method getPeriodo()
+  location: variable i of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/controller/CursoController.java:[22,68] cannot find symbol
+  symbol:   method getId()
+  location: variable saved of type com.mx.escuela.model.Curso
+[INFO] 58 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.422 s
+[INFO] Finished at: 2025-11-04T20:24:12-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project escuela: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/config/GlobalExceptionHandler.java:[14,8] class ConfigExceptionHandler is public, should be declared in a file named ConfigExceptionHandler.java
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/controller/InstructorController.java:[22,74] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable saved of type com.mx.escuela.model.Instructor
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InstructorService.java:[16,43] cannot find symbol
+[ERROR]   symbol:   method setId(<nulltype>)
+[ERROR]   location: variable i of type com.mx.escuela.model.Instructor
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InstructorService.java:[17,91] cannot find symbol
+[ERROR]   symbol:   method getNombre()
+[ERROR]   location: variable i of type com.mx.escuela.model.Instructor
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InstructorService.java:[17,119] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable i of type com.mx.escuela.model.Instructor
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[28,6] cannot find symbol
+[ERROR]   symbol:   method setInscripcion(com.mx.escuela.model.Inscripcion)
+[ERROR]   location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[29,6] cannot find symbol
+[ERROR]   symbol:   method setNota(@jakarta.validation.constraints.NotNull,@jakarta.validation.constraints.DecimalMin("0.0"),@jakarta.validation.constraints.DecimalMax("100.0") java.math.BigDecimal)
+[ERROR]   location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[32,41] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[41,8] cannot find symbol
+[ERROR]   symbol:   method setInscripcion(com.mx.escuela.model.Inscripcion)
+[ERROR]   location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[45,8] cannot find symbol
+[ERROR]   symbol:   method setNota(@jakarta.validation.constraints.NotNull,@jakarta.validation.constraints.DecimalMin("0.0"),@jakarta.validation.constraints.DecimalMax("100.0") java.math.BigDecimal)
+[ERROR]   location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[85,14] cannot find symbol
+[ERROR]   symbol:   method getInscripcion()
+[ERROR]   location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[89,33] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CalificacionService.java:[89,50] cannot find symbol
+[ERROR]   symbol:   method getNota()
+[ERROR]   location: variable c of type com.mx.escuela.model.Calificacion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/EstudianteService.java:[16,43] cannot find symbol
+[ERROR]   symbol:   method setId(<nulltype>)
+[ERROR]   location: variable e of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/EstudianteService.java:[17,91] cannot find symbol
+[ERROR]   symbol:   method getNombre()
+[ERROR]   location: variable e of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/EstudianteService.java:[17,119] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable e of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/EstudianteService.java:[17,153] cannot find symbol
+[ERROR]   symbol:   method getFechaIngreso()
+[ERROR]   location: variable e of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/controller/EstudianteController.java:[22,73] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable saved of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[20,6] cannot find symbol
+[ERROR]   symbol:   method setId(<nulltype>)
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[21,9] cannot find symbol
+[ERROR]   symbol:   method getInstructor()
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[21,36] cannot find symbol
+[ERROR]   symbol:   method getInstructor()
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[22,47] cannot find symbol
+[ERROR]   symbol:   method getInstructor()
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[23,91] cannot find symbol
+[ERROR]   symbol:   method getInstructor()
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[24,8] cannot find symbol
+[ERROR]   symbol:   method setInstructor(com.mx.escuela.model.Instructor)
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[30,18] cannot find symbol
+[ERROR]   symbol:   method getClave()
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[31,19] cannot find symbol
+[ERROR]   symbol:   method getNombre()
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[32,21] cannot find symbol
+[ERROR]   symbol:   method getCreditos()
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[33,9] cannot find symbol
+[ERROR]   symbol:   method getInstructor()
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[33,36] cannot find symbol
+[ERROR]   symbol:   method getInstructor()
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[34,40] cannot find symbol
+[ERROR]   symbol:   method getInstructor()
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[35,91] cannot find symbol
+[ERROR]   symbol:   method getInstructor()
+[ERROR]   location: variable c of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/CursoService.java:[38,9] cannot find symbol
+[ERROR]   symbol:   method setInstructor(<nulltype>)
+[ERROR]   location: variable db of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/exception/GlobalExceptionHandler.java:[18,29] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.mx.escuela.exception.ApiError
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[49,14] cannot find symbol
+[ERROR]   symbol:   method setEstudiante(com.mx.escuela.model.Estudiante)
+[ERROR]   location: variable nueva of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[50,14] cannot find symbol
+[ERROR]   symbol:   method setCurso(com.mx.escuela.model.Curso)
+[ERROR]   location: variable nueva of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[51,14] cannot find symbol
+[ERROR]   symbol:   method setPeriodo(@jakarta.validation.constraints.NotBlank java.lang.String)
+[ERROR]   location: variable nueva of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[56,32] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable est of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[56,45] cannot find symbol
+[ERROR]   symbol:   method getNombre()
+[ERROR]   location: variable est of type com.mx.escuela.model.Estudiante
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[57,32] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable cur of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[57,45] cannot find symbol
+[ERROR]   symbol:   method getNombre()
+[ERROR]   location: variable cur of type com.mx.escuela.model.Curso
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[55,25] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable guardada of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[58,25] cannot find symbol
+[ERROR]   symbol:   method getPeriodo()
+[ERROR]   location: variable guardada of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[70,16] cannot find symbol
+[ERROR]   symbol:   method setEstudiante(com.mx.escuela.model.Estudiante)
+[ERROR]   location: variable ins of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[75,16] cannot find symbol
+[ERROR]   symbol:   method setCurso(com.mx.escuela.model.Curso)
+[ERROR]   location: variable ins of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[78,16] cannot find symbol
+[ERROR]   symbol:   method setPeriodo(@jakarta.validation.constraints.NotBlank java.lang.String)
+[ERROR]   location: variable ins of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[84,32] cannot find symbol
+[ERROR]   symbol:   method getEstudiante()
+[ERROR]   location: variable upd of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[84,61] cannot find symbol
+[ERROR]   symbol:   method getEstudiante()
+[ERROR]   location: variable upd of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[85,32] cannot find symbol
+[ERROR]   symbol:   method getCurso()
+[ERROR]   location: variable upd of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[85,56] cannot find symbol
+[ERROR]   symbol:   method getCurso()
+[ERROR]   location: variable upd of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[83,20] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable upd of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[86,20] cannot find symbol
+[ERROR]   symbol:   method getPeriodo()
+[ERROR]   location: variable upd of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[100,30] cannot find symbol
+[ERROR]   symbol:   method getEstudiante()
+[ERROR]   location: variable i of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[100,57] cannot find symbol
+[ERROR]   symbol:   method getEstudiante()
+[ERROR]   location: variable i of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[101,30] cannot find symbol
+[ERROR]   symbol:   method getCurso()
+[ERROR]   location: variable i of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[101,52] cannot find symbol
+[ERROR]   symbol:   method getCurso()
+[ERROR]   location: variable i of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[99,18] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable i of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/service/InscripcionServiceImpl.java:[102,18] cannot find symbol
+[ERROR]   symbol:   method getPeriodo()
+[ERROR]   location: variable i of type com.mx.escuela.model.Inscripcion
+[ERROR] /C:/Users/Samuel Perez/Desktop/BasesDeDatos/escuela/src/main/java/com/mx/escuela/controller/CursoController.java:[22,68] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable saved of type com.mx.escuela.model.Curso
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

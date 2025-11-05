@@ -1,0 +1,96 @@
+/* ==== Acciones en tabla ==== */
+.table-actions { 
+  white-space: nowrap; 
+}
+
+/* ==== Tarjeta de estadísticas (Promedio General) ==== */
+#calificaciones-stats {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* Ajustes del canvas del gráfico de promedio general */
+#promedioChart {
+  display: block;
+  max-width: 100%;
+  height: 220px !important; /* Ajusta si lo quieres más alto/bajo */
+}
+
+/* ==== Gráfico de Promedio por Curso ==== */
+#calificaciones-curso {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+#promedioCursoChart {
+  display: block;
+  width: 100%;
+  height: 280px !important; /* altura del gráfico de barras */
+}
+
+/* Separadores suaves para las tablas */
+.table thead th {
+  white-space: nowrap;
+}
+.table td, .table th {
+  vertical-align: middle;
+}
+
+/* ====== Modo impresión ====== */
+@media print {
+  /* Ocultar elementos interactivos / navegación */
+  nav.navbar, .nav, .modal, .pagination, .btn, .input-group, 
+  #btn-export-csv, #btn-export-pdf, #btnRefrescarCal {
+    display: none !important;
+  }
+
+  /* Fondo blanco plano */
+  body { background: #fff; }
+
+  /* Quitar sombras y bordes de contenedores principales */
+  .shadow-sm, .shadow, .card, #entityTabsContent {
+    box-shadow: none !important;
+  }
+
+  /* Mantener visibles tabla y estadísticas */
+  #calificaciones-stats, #calificaciones-curso {
+    border: none;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+
+  /* El canvas imprime a tamaño adecuado */
+  #promedioChart, #promedioCursoChart {
+    height: 180px !important;
+  }
+
+  /* Evitar cortes raros entre páginas */
+  table, tr, td, th {
+    page-break-inside: avoid;
+  }
+
+  /* Altura explícita para que Chart.js pueda calcular el lienzo */
+#promedioChart,
+#promedioCursoChart{
+  display:block;
+  width:100% !important;
+  height:280px !important;  /* súbelo/bájalo a gusto */
+}
+
+/* En impresión, un poco más bajos */
+@media print{
+  #promedioChart,
+  #promedioCursoChart{
+    height:180px !important;
+  }
+}
+
+#promedioChart, #promedioCursoChart{ height:280px !important; }
+@media print{ #promedioChart, #promedioCursoChart{ height:180px !important; } }
+
+}
